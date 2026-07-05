@@ -1,11 +1,16 @@
 # Chrome Style Guide
 
-The window-shell design system for an Electron app whose UI mirrors Chrome's
+The window-shell design system for a desktop app whose UI mirrors Chrome's
 window chrome — **title bar, tab strip, toolbar, omnibar, menus, and overlays**.
+
+Built primarily with **Electron** in mind, but the design is shell-agnostic: it applies
+equally to **Tauri** or any web-frontend desktop shell (Wails, Neutralino, a frameless PWA).
+The rendered output is pure CSS + inline SVG with no framework or platform coupling — only
+two small implementation hooks differ per shell (see [Shell portability](#shell-portability)).
 
 This is a **design / reference project**, not the app itself. It exists to define
 exact tokens, measurements, states, and behavior so those components can be built
-consistently in an Electron (or comparable) shell.
+consistently in whichever shell you target.
 
 ## Design targets
 
@@ -77,6 +82,21 @@ See [STYLE_GUIDE.md](STYLE_GUIDE.md) for the full spec. In brief:
 
 Preserve the **23px tab-strip centerline**: any control added to the tab strip must be
 vertically centered with the tabs (STYLE_GUIDE §4). This is the most common thing to break.
+
+## Shell portability
+
+The design is drawn entirely with CSS and inline SVG — no raster assets, no Node/Electron
+APIs, no framework coupling in the rendered output. Everything except the window frame is
+shell-agnostic. Only **two** implementation hooks are shell-specific, and both map cleanly:
+
+| Concern | Electron | Tauri |
+|---|---|---|
+| Custom window frame (draw your own title bar + min/max/close) | frameless `BrowserWindow` (`frame: false`) | `decorations: false` |
+| Draggable title-bar region | CSS `-webkit-app-region: drag` (and `no-drag` on the controls) | `data-tauri-drag-region` attribute on the draggable element |
+
+`STYLE_GUIDE.md` §3 documents the title bar using Electron's `-webkit-app-region: drag`;
+under Tauri, swap that hook for `data-tauri-drag-region`. Everything else — tokens,
+measurements, states, tab behavior, menus, overlays — carries over unchanged.
 
 ## Editing workflow
 

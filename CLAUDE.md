@@ -1,8 +1,10 @@
 # Project: Chrome Style Guide
 
-This project defines the window-shell design system for an Electron app (title bar,
-tab strip, toolbar, omnibar, menus, overlays). It is a **design/reference project**,
-not the app itself.
+This project defines the window-shell design system for a desktop app (title bar,
+tab strip, toolbar, omnibar, menus, overlays). It targets **Electron** primarily but is
+shell-agnostic — it applies equally to **Tauri** or any web-frontend desktop shell; only
+the window-frame and drag-region hooks differ per shell (see README "Shell portability").
+It is a **design/reference project**, not the app itself.
 
 ## Source of truth
 - **`STYLE_GUIDE.md`** — authoritative text spec (tokens, per-component px measurements,

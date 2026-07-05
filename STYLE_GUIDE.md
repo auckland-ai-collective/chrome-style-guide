@@ -1,7 +1,9 @@
 # Application Chrome — Implementation Spec
 
-Implementation spec for the Electron window shell (title bar, tab strip, toolbar,
-omnibar, menus, overlays). This is the **authoritative text spec**. The rendered
+Implementation spec for the desktop window shell (title bar, tab strip, toolbar,
+omnibar, menus, overlays). Targets Electron primarily but is shell-agnostic — applies
+equally to Tauri or any web-frontend desktop shell; only the window-frame and drag-region
+hooks differ (see §3). This is the **authoritative text spec**. The rendered
 reference lives in `Chrome Style Guide.dc.html` (annotated) and
 `Chrome Style Guide Window.dc.html` (interactive window). When a number here and a
 number in the HTML disagree, the HTML is the source of truth — update this file to match.
@@ -68,11 +70,14 @@ Single family (see above). Sizes / weights:
 
 ---
 
-## 3. Title bar  (Electron-specific — a browser lacks this)
-Carries app identity + OS window controls so the tab strip stays dedicated to tabs.
+## 3. Title bar  (shell-drawn — a browser lacks this)
+Carries app identity + OS window controls so the tab strip stays dedicated to tabs. Exists
+only because the app draws its own window frame (Electron `frame: false` / Tauri
+`decorations: false`).
 
 - **Height:** 36px · **Background:** `#171717`
-- **Draggable region:** `-webkit-app-region: drag` on the whole bar **except** the window controls (`no-drag`).
+- **Draggable region:** the whole bar is draggable **except** the window controls. Electron:
+  `-webkit-app-region: drag` (controls set `no-drag`). Tauri: `data-tauri-drag-region` on the bar.
 - **Left cluster:** 15px app mark (4px radius, accent fill) · 9px gap · app name 12px `#c8ccd0` · optional em-dash subtitle `#6b7075`.
 - **Window controls (right):** three cells, each **46 × 36px**, glyph 12px / 1px stroke.
   - Minimize glyph: bottom line. Maximize: 7px square. Close: X.
