@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<div style="width:340px;background:#232427;border-radius:12px;box-shadow:0 18px 50px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.05);overflow:hidden;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;padding:6px 0 0;">
+
+  <!-- PROMO BANNER -->
+  <div style="margin:6px 8px 8px;background:{{ accent }};border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:14px;cursor:default;" style-hover="filter:brightness(1.06);">
+    <svg width="20" height="20" viewBox="0 0 24 24" style="color:#fff;flex:0 0 20px;"><path d="M5 15c-1 2-1 4-1 4s2 0 4-1M14.5 4.5c2.5-1 5-1 5-1s0 2.5-1 5c-1.6 4-6 7.5-9 8.5L6 14C7 11 10.5 6.6 14.5 4.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="14.5" cy="9.5" r="1.6" fill="currentColor"/></svg>
+    <span style="flex:1;font-size:14px;font-weight:600;color:#fff;">Relaunch to update</span>
+    <span style="font-size:12px;color:rgba(255,255,255,.8);">Your tabs will reopen</span>
+  </div>
+
+  <!-- GROUP A -->
+  <div style="padding:2px 0;">
+    <div style="height:40px;display:flex;align-items:center;gap:18px;padding:0 16px;cursor:default;" style-hover="background:rgba(255,255,255,.06);">
+      <span style="flex:0 0 20px;color:#c8ccd0;display:flex;"><svg width="18" height="18" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 6V4h8v2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+      <span style="flex:1;font-size:14px;color:#e8eaed;">New tab</span>
+      <span style="font-size:13px;color:#9aa0a6;">Ctrl+T</span>
+    </div>
+    <div style="height:40px;display:flex;align-items:center;gap:18px;padding:0 16px;cursor:default;" style-hover="background:rgba(255,255,255,.06);">
+      <span style="flex:0 0 20px;color:#c8ccd0;display:flex;"><svg width="18" height="18" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 9v6M9 12h6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span>
+      <span style="flex:1;font-size:14px;color:#e8eaed;">New window</span>
+      <span style="font-size:13px;color:#9aa0a6;">Ctrl+N</span>
+    </div>
+    <div style="height:40px;display:flex;align-items:center;gap:18px;padding:0 16px;cursor:default;" style-hover="background:rgba(255,255,255,.06);">
+      <span style="flex:0 0 20px;color:#c8ccd0;display:flex;"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.2-3 7.4-7 8.5C8 18.4 5 15.2 5 11V6z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+      <span style="flex:1;font-size:14px;color:#e8eaed;">New private window</span>
+      <span style="font-size:13px;color:#9aa0a6;">Ctrl+Shift+N</span>
+    </div>
+  </div>
+
+  <div style="height:1px;background:#3c4043;margin:6px 0;"></div>
+
+  <!-- HIGHLIGHTED ROW -->
+  <div style="margin:2px 8px;background:#3c4043;border-radius:10px;height:44px;display:flex;align-items:center;gap:14px;padding:0 12px;cursor:default;" style-hover="background:#484c50;">
+    <span style="width:28px;height:28px;flex:0 0 28px;border-radius:50%;background:#5f6368;display:flex;align-items:center;justify-content:center;"><svg width="16" height="16" viewBox="0 0 24 24"><circle cx="8" cy="14" r="3" fill="none" stroke="#e8eaed" stroke-width="1.6"/><circle cx="16" cy="14" r="3" fill="none" stroke="#e8eaed" stroke-width="1.6"/><path d="M11 13c.5-.6 1.5-.6 2 0M4 12l2-4h12l2 4" fill="none" stroke="#e8eaed" stroke-width="1.4" stroke-linecap="round"/></svg></span>
+    <span style="flex:1;font-size:14px;font-weight:600;color:#e8eaed;">Private</span>
+    <svg width="16" height="16" viewBox="0 0 24 24" style="color:#9aa0a6;"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+
+  <!-- GROUP B -->
+  <div style="padding:2px 0;">
+    <div style="height:40px;display:flex;align-items:center;gap:18px;padding:0 16px;cursor:default;" style-hover="background:rgba(255,255,255,.06);">
+      <span style="flex:0 0 20px;color:#c8ccd0;display:flex;"><svg width="18" height="18" viewBox="0 0 24 24"><circle cx="8" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 12h9M17 12v4M20 12v3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+      <span style="flex:1;font-size:14px;color:#e8eaed;">Passwords and autofill</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" style="color:#9aa0a6;"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div style="height:40px;display:flex;align-items:center;gap:18px;padding:0 16px;cursor:default;" style-hover="background:rgba(255,255,255,.06);">
+      <span style="flex:0 0 20px;color:#c8ccd0;display:flex;"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M12 4v10M8 11l4 4 4-4M5 19h14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span style="flex:1;font-size:14px;color:#e8eaed;">Downloads</span>
+      <span style="font-size:13px;color:#9aa0a6;">Ctrl+J</span>
+    </div>
+    <div style="height:40px;display:flex;align-items:center;gap:18px;padding:0 16px;cursor:default;" style-hover="background:rgba(255,255,255,.06);">
+      <span style="flex:0 0 20px;color:#c8ccd0;display:flex;"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M12 4l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 9.7l5.4-.8z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+      <span style="flex:1;font-size:14px;color:#e8eaed;">Bookmarks and lists</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" style="color:#9aa0a6;"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div style="height:40px;display:flex;align-items:center;gap:18px;padding:0 16px;cursor:default;" style-hover="background:rgba(255,255,255,.06);">
+      <span style="flex:0 0 20px;color:#c8ccd0;display:flex;"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M6 5h5v3a2 2 0 104 0V5h3v5h-3a2 2 0 100 4h3v5H5v-5H4a2 2 0 110-4h2z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+      <span style="flex:1;font-size:14px;color:#e8eaed;">Extensions</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" style="color:#9aa0a6;"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div style="height:40px;display:flex;align-items:center;gap:18px;padding:0 16px;cursor:default;" style-hover="background:rgba(255,255,255,.06);">
+      <span style="flex:0 0 20px;color:#c8ccd0;display:flex;"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M5 7h14M9 7V5h6v2M6 7l1 13h10l1-13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span style="flex:1;font-size:14px;color:#e8eaed;">Delete browsing data…</span>
+      <span style="font-size:13px;color:#9aa0a6;">Ctrl+Shift+Del</span>
+    </div>
+  </div>
+
+  <div style="height:1px;background:#3c4043;margin:6px 0;"></div>
+
+  <!-- ZOOM ROW -->
+  <div style="height:48px;display:flex;align-items:center;padding:0 16px;gap:18px;">
+    <span style="flex:0 0 20px;color:#c8ccd0;display:flex;"><svg width="18" height="18" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="15.5" y1="15.5" x2="20" y2="20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+    <span style="flex:1;font-size:14px;color:#e8eaed;">Zoom</span>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <div style="width:34px;height:34px;border-radius:50%;background:#3c4043;color:#e8eaed;display:flex;align-items:center;justify-content:center;cursor:default;" style-hover="background:#484c50;"><svg width="16" height="16" viewBox="0 0 24 24"><line x1="6" y1="12" x2="18" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+      <span style="font-size:13px;color:#e8eaed;min-width:38px;text-align:center;">100%</span>
+      <div style="width:34px;height:34px;border-radius:50%;background:#3c4043;color:#e8eaed;display:flex;align-items:center;justify-content:center;cursor:default;" style-hover="background:#484c50;"><svg width="16" height="16" viewBox="0 0 24 24"><line x1="12" y1="6" x2="12" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="6" y1="12" x2="18" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+      <div style="width:1px;height:22px;background:#3c4043;margin:0 2px;"></div>
+      <div style="width:34px;height:34px;border-radius:8px;color:#e8eaed;display:flex;align-items:center;justify-content:center;cursor:default;" style-hover="background:#3c4043;"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    </div>
+  </div>
+
+  <div style="height:1px;background:#3c4043;margin:6px 0;"></div>
+
+  <!-- GROUP C -->
+  <div style="padding:2px 0;">
+    <div style="height:40px;display:flex;align-items:center;gap:18px;padding:0 16px;cursor:default;" style-hover="background:rgba(255,255,255,.06);">
+      <span style="flex:0 0 20px;color:#c8ccd0;display:flex;"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M6 9V4h12v5M6 18H5a2 2 0 01-2-2v-4a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2h-1M7 14h10v6H7z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+      <span style="flex:1;font-size:14px;color:#e8eaed;">Print…</span>
+      <span style="font-size:13px;color:#9aa0a6;">Ctrl+P</span>
+    </div>
+    <div style="height:40px;display:flex;align-items:center;gap:18px;padding:0 16px;cursor:default;" style-hover="background:rgba(255,255,255,.06);">
+      <span style="flex:0 0 20px;color:#c8ccd0;display:flex;"><svg width="18" height="18" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><line x1="15.5" y1="15.5" x2="20" y2="20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M8 10.5l2 2 3-3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span style="flex:1;font-size:14px;color:#e8eaed;">Find and edit</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" style="color:#9aa0a6;"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div style="height:40px;display:flex;align-items:center;gap:18px;padding:0 16px;cursor:default;" style-hover="background:rgba(255,255,255,.06);">
+      <span style="flex:0 0 20px;color:#c8ccd0;display:flex;"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M4 12v7a1 1 0 001 1h14a1 1 0 001-1v-7M16 6l-4-4-4 4M12 2v13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span style="flex:1;font-size:14px;color:#e8eaed;">Save and share</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" style="color:#9aa0a6;"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div style="height:40px;display:flex;align-items:center;gap:18px;padding:0 16px;cursor:default;" style-hover="background:rgba(255,255,255,.06);">
+      <span style="flex:0 0 20px;color:#c8ccd0;display:flex;"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M14 4l6 6-9 9H5v-6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><line x1="13" y1="5" x2="19" y2="11" stroke="currentColor" stroke-width="1.6"/></svg></span>
+      <span style="flex:1;font-size:14px;color:#e8eaed;">More tools</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" style="color:#9aa0a6;"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div style="height:40px;display:flex;align-items:center;gap:18px;padding:0 16px;cursor:default;opacity:.45;">
+      <span style="flex:0 0 20px;color:#c8ccd0;display:flex;"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M4 7h9M8 5v2M6 7c0 4 2 7 5 8M11 7c0 3-2 6-5 8M13 19l4-9 4 9M14.5 16h5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span style="flex:1;font-size:14px;color:#e8eaed;">Translate…</span>
+    </div>
+  </div>
+
+  <div style="height:1px;background:#3c4043;margin:6px 0;"></div>
+
+  <!-- GROUP D -->
+  <div style="padding:2px 0;">
+    <div style="height:40px;display:flex;align-items:center;gap:18px;padding:0 16px;cursor:default;" style-hover="background:rgba(255,255,255,.06);">
+      <span style="flex:0 0 20px;color:#c8ccd0;display:flex;"><svg width="18" height="18" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9.5 9.5a2.5 2.5 0 013.8-.8c1 .8 1 2-.3 2.8-.8.5-1 .9-1 1.7M12 16.5v.1" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+      <span style="flex:1;font-size:14px;color:#e8eaed;">Help</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" style="color:#9aa0a6;"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div style="height:40px;display:flex;align-items:center;gap:18px;padding:0 16px;cursor:default;" style-hover="background:rgba(255,255,255,.06);">
+      <span style="flex:0 0 20px;color:#c8ccd0;display:flex;"><svg width="18" height="18" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.5 5.5l2 2M16.5 16.5l2 2M18.5 5.5l-2 2M7.5 16.5l-2 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      <span style="flex:1;font-size:14px;color:#e8eaed;">Settings</span>
+    </div>
+    <div style="height:40px;display:flex;align-items:center;gap:18px;padding:0 16px;cursor:default;" style-hover="background:rgba(255,255,255,.06);">
+      <span style="flex:0 0 20px;color:#c8ccd0;display:flex;"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M14 5H6a1 1 0 00-1 1v12a1 1 0 001 1h8M10 12h10M17 9l3 3-3 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span style="flex:1;font-size:14px;color:#e8eaed;">Exit</span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="background:#1b1c1e;border-top:1px solid #3c4043;height:52px;display:flex;align-items:center;gap:18px;padding:0 16px;">
+    <span style="flex:0 0 20px;color:#9aa0a6;display:flex;"><svg width="18" height="18" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span>
+    <span style="flex:1;font-size:13px;color:#9aa0a6;">Profile managed by sygnal.com</span>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:340,&quot;height&quot;:900},&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#2f6fd6&quot;,&quot;tsType&quot;:&quot;string&quot;}}"></script>
+</body>
+</html>

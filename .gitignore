@@ -1,0 +1,10 @@
+# Working artifacts from Claude design authoring — not referenced by the guide.
+# These are re-created on export; no need to version them.
+/scraps/
+/uploads/
+.thumbnail
+
+# OS / editor cruft
+Thumbs.db
+Desktop.ini
+.DS_Store
