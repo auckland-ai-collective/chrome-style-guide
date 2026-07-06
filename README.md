@@ -12,6 +12,23 @@ This is a **design / reference project**, not the app itself. It exists to defin
 exact tokens, measurements, states, and behavior so those components can be built
 consistently in whichever shell you target.
 
+## Preview
+
+The full window shell — title bar, tab strip, toolbar/omnibar, and content area — in its
+private-session empty state:
+
+![The window shell in its private-session empty state, showing the title bar, tab strip, toolbar/omnibar, and content column.](assets/window-empty-state.png)
+
+Overlay components share one visual language across the shell:
+
+| App menu (kebab) | Context menu | Tab-search popup |
+|---|---|---|
+| ![App menu opened from the toolbar kebab.](assets/app-menu.png) | ![Canvas context menu with Back, Forward, Reload, Save as, and Print.](assets/context-menu.png) | ![Tab-search popup triggered by Ctrl+Shift+A.](assets/tab-search-popup.png) |
+
+> These are rendered captures of the `.dc.html` sources, kept in [`assets/`](assets/) as the
+> canonical README imagery. They're for illustration — `STYLE_GUIDE.md` and the `.dc.html`
+> files remain authoritative on exact measurements.
+
 ## Design targets
 
 - **Platform:** Windows-style window controls (min / max / close on the title bar).
@@ -59,12 +76,18 @@ The window and menu are imported into the guide **by name** (`Chrome Style Guide
 | `support.js` | Generated DC runtime that renders the `.dc.html` / `.html` files. |
 | `.thumbnail` | WebP project thumbnail (Claude design artifact). |
 
-### Working artifacts (not referenced by the guide)
+### Repository imagery (versioned)
 
 | Path | What it is |
 |---|---|
-| `scraps/` | Ad-hoc screenshots captured during authoring/review. |
-| `uploads/` | Images pasted into Claude design while authoring. |
+| `assets/` | Curated screenshots embedded in this README (see [Preview](#preview)). Versioned — safe to reference. |
+
+### Working artifacts (not referenced by the guide, git-ignored)
+
+| Path | What it is |
+|---|---|
+| `scraps/` | Ad-hoc screenshots captured during authoring/review. Re-created on export; **not** committed. |
+| `uploads/` | Images pasted into Claude design while authoring. Not committed. |
 
 ## Component overview
 
