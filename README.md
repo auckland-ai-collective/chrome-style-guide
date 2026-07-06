@@ -129,3 +129,7 @@ measurements, states, tab behavior, menus, overlays — carries over unchanged.
 4. Update `STYLE_GUIDE.md` to match — remember the HTML is authoritative on measurements.
 
 See [CLAUDE.md](CLAUDE.md) for the working rules used by AI assistants on this repo.
+
+## License
+
+Released under the [MIT License](LICENSE) — © 2026 Michael Wells &lt;mike@aaic.nz&gt;.
